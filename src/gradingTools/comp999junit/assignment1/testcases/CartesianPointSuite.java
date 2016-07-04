@@ -40,24 +40,30 @@ public class CartesianPointSuite {
 		try {
 //		BasicGradingEnvironment.get().setLoadClasses(false);
 //		CurrentProjectHolder.setProject(new BasicProject(null, new File("."), null, "wrongangle"));
-		CurrentProjectHolder.setProject(new BasicProject(null, new File("."), null, "allcorrect"));
+//		CurrentProjectHolder.setProject(new BasicProject(null, new File("."), null, "allcorrect"));
 //		CurrentProjectHolder.setProject(new BasicProject(null, new File("."), null, "aecredit"));
 //		CurrentProjectHolder.setProject(new BasicProject(null, new File("."), null, "secredit"));
 //		CurrentProjectHolder.setProject(new BasicProject(null, new File("."), null, "missingcode"));
 
+//		CurrentProjectHolder.setProject(new BasicProject("allcorrect"));
+//		CurrentProjectHolder.setProject("aecredit");
+//		BasicJUnitUtils.jUnitCoreTestAll(CartesianPointSuite.class);
+		BasicJUnitUtils.interactiveTestAll("aecredit", CartesianPointSuite.class);
+//		BasicJUnitUtils.interactiveTestAll("allcorrect", CartesianPointSuite.class);
+
 
 
 //		CurrentProjectHolder.setProject(new BasicProject(null, new File("."), null, "allcorrect"));
-		GradableJUnitSuite aGradable = BasicJUnitUtils.toGradableTree(CartesianPointSuite.class);
-		TestCaseResult aTestCaseResult = aGradable.test();
-		System.out.println(aGradable.getText());
-		ObjectEditor.treeEdit(aGradable);
-		Result aResult = JUnitCore.runClasses(CartesianPointSuite.class);
-		for (Failure failure : aResult.getFailures()) {
-	         System.out.println(failure.toString());
-	      }
-	    System.out.println(aResult.wasSuccessful());
-		} catch (FileNotFoundException e) {
+//		GradableJUnitSuite aGradable = BasicJUnitUtils.toGradableTree(CartesianPointSuite.class);
+//		TestCaseResult aTestCaseResult = aGradable.test();
+//		System.out.println(aGradable.getText());
+//		ObjectEditor.treeEdit(aGradable);
+//		Result aResult = JUnitCore.runClasses(CartesianPointSuite.class);
+//		for (Failure failure : aResult.getFailures()) {
+//	         System.out.println(failure.toString());
+//	      }
+//	    System.out.println(aResult.wasSuccessful());
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 //		System.exit(0); // proxy makes the main hang around?

@@ -18,14 +18,20 @@ public class AngleTestTest {
 		try {
 		String aKey = "AngleTest";
 		GradableJUnitTest aTest = BasicJUnitUtils.createGradable("AngleTest");
+//		GradableJUnitTest aCorrectAngleTest = BasicJUnitUtils.createGradable("AngleTest");
+//		GradableJUnitTest aWrongAngleTest = BasicJUnitUtils.createGradable("AngleTest");
 		Assert.assertTrue("Could not find class matching " + aKey, aTest != null);
 		aFractionComplete += 0.1; // they had a test class at least
-		Project aWrongAngleProject = new BasicProject(null, new File("."), null, "wrongangle");
-		Project aCorrectAngleProject = new BasicProject(null, new File("."), null, "allcorrect");
-		CurrentProjectHolder.setProject(aCorrectAngleProject);
+//		Project aWrongAngleProject = new BasicProject("wrongangle");
+//		Project aCorrectAngleProject = new BasicProject("allcorrect");
+		CurrentProjectHolder.setProject("allcorrect");
 		TestCaseResult aCorrectAngleResult = aTest.test();
-		CurrentProjectHolder.setProject(aWrongAngleProject);
+//		TestCaseResult aCorrectAngleResult = aCorrectAngleTest.test();
+		CurrentProjectHolder.setProject("wrongangle");
+
 		TestCaseResult aWrongAngleResult = aTest.test();
+//		TestCaseResult aWrongAngleResult = aWrongAngleTest.test();
+
 		Assert.assertTrue("Correct angle failed and wrong angle passed:" + aFractionComplete, aCorrectAngleResult.isPass() || aWrongAngleResult.isFail());
 		aFractionComplete = 0.4;
 		Assert.assertTrue("Correct angle failed and wrong angle failed:" + aFractionComplete, aCorrectAngleResult.isPass());
