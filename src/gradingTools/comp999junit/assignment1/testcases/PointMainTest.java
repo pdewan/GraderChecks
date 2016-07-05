@@ -3,6 +3,8 @@ package gradingTools.comp999junit.assignment1.testcases;
 import grader.basics.execution.BasicProjectExecution;
 import grader.basics.execution.NotRunnableException;
 import grader.basics.junit.BasicJUnitUtils;
+import grader.basics.junit.NotesAndScore;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -31,7 +33,7 @@ public  class PointMainTest extends AbstractPointTest {
 		
 		String[] anOutputLines = anOutput.split("\n");
 		if (anOutputLines.length != 2) {
-			Assert.assertTrue("Expecting exactly two output lines:" + fractionComplete, false);
+			Assert.assertTrue("Expecting exactly two output lines" + NotesAndScore.PERECTAGE_CHARACTER + fractionComplete, false);
 		}
 		fractionComplete += 0.1;
 			Double aComputedRadius = Double.parseDouble (anOutputLines[0]);

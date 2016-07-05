@@ -48,8 +48,10 @@ public class CartesianPointSuite {
 //		CurrentProjectHolder.setProject(new BasicProject("allcorrect"));
 //		CurrentProjectHolder.setProject("aecredit");
 //		BasicJUnitUtils.jUnitCoreTestAll(CartesianPointSuite.class);
-		BasicJUnitUtils.interactiveTestAll("aecredit", CartesianPointSuite.class);
+//		BasicJUnitUtils.interactiveTestAll("aecredit", CartesianPointSuite.class);
 //		BasicJUnitUtils.interactiveTestAll("allcorrect", CartesianPointSuite.class);
+		BasicJUnitUtils.interactiveTestAll("wrongangle", CartesianPointSuite.class);
+
 
 
 

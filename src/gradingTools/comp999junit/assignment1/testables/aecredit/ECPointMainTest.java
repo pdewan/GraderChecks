@@ -1,6 +1,7 @@
 package gradingTools.comp999junit.assignment1.testables.aecredit;
 
 import grader.basics.execution.BasicProjectExecution;
+import grader.basics.junit.NotesAndScore;
 import gradingTools.comp999junit.assignment1.testables.wrongangle.Main;
 
 import org.junit.Assert;
@@ -27,7 +28,7 @@ public  class ECPointMainTest extends ECAbstractPointTest {
 		
 		String[] anOutputLines = anOutput.split("\n");
 		if (anOutputLines.length != 2) {
-			Assert.assertTrue("Expecting exactly two output lines:" + fractionComplete, false);
+			Assert.assertTrue("Expecting exactly two output lines" + NotesAndScore.PERECTAGE_CHARACTER + fractionComplete, false);
 		}
 		fractionComplete += 0.1;
 		try {
@@ -37,7 +38,7 @@ public  class ECPointMainTest extends ECAbstractPointTest {
 
 
 		} catch (Exception e) {
-			Assert.assertTrue("One or more output does not parse as a double:" + fractionComplete, false);
+			Assert.assertTrue("One or more output does not parse as a double" + NotesAndScore.PERECTAGE_CHARACTER + fractionComplete, false);
 		}
 		
 	}
