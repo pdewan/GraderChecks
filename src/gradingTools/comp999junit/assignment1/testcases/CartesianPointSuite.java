@@ -50,7 +50,7 @@ public class CartesianPointSuite {
 //		BasicJUnitUtils.jUnitCoreTestAll(CartesianPointSuite.class);
 //		BasicJUnitUtils.interactiveTestAll("aecredit", CartesianPointSuite.class);
 //		BasicJUnitUtils.interactiveTestAll("allcorrect", CartesianPointSuite.class);
-		BasicJUnitUtils.interactiveTestAll("wrongangle", CartesianPointSuite.class);
+		BasicJUnitUtils.interactiveTest("wrongangle", CartesianPointSuite.class);
 
 
 
