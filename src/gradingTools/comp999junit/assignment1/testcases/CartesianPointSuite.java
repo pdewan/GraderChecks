@@ -5,6 +5,7 @@ import grader.basics.junit.GradableJUnitSuite;
 import grader.basics.junit.TestCaseResult;
 import grader.basics.project.BasicProject;
 import grader.basics.project.CurrentProjectHolder;
+import grader.basics.vetoers.AConsentFormVetoer;
 import gradingTools.comp999junit.assignment1.testcases.testcases.TestsTestSuite;
 
 import java.io.File;
@@ -50,6 +51,8 @@ public class CartesianPointSuite {
 //		BasicJUnitUtils.jUnitCoreTestAll(CartesianPointSuite.class);
 //		BasicJUnitUtils.interactiveTestAll("aecredit", CartesianPointSuite.class);
 //		BasicJUnitUtils.interactiveTestAll("allcorrect", CartesianPointSuite.class);
+//		AConsentFormVetoer.showConsentForm();
+//		BasicJUnitUtils.interactiveTestAll("wrongangle", CartesianPointSuite.class);
 		BasicJUnitUtils.interactiveTest("wrongangle", CartesianPointSuite.class);
 
 
