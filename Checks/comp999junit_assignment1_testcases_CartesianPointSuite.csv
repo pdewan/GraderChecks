@@ -1,2 +1,4 @@
 #,Time,%Passes,Change,Test,Pass,Partial,Fail,Untested
-0,Sat Jul 09 01:11:30 EDT 2016,11,11,PointPrintTest,PointPrintTest+ , , ,AngleTestTest PointAngleFortyFiveDegreeTest PointAngleMinusNinetyDegreeTest PointAngleNinetyDegreeTest PointAngleZeroDegreeTest PointMainTest PointRadiusTest PointTranslationTest ,
+0,Sun Jul 10 06:56:50 EDT 2016,11,11,PointPrintTest,PointPrintTest+ , , ,AngleTestTest PointAngleFortyFiveDegreeTest PointAngleMinusNinetyDegreeTest PointAngleNinetyDegreeTest PointAngleZeroDegreeTest PointMainTest PointRadiusTest PointTranslationTest ,
+1,Sun Jul 10 07:00:44 EDT 2016,11,0,PointPrintTest,PointPrintTest , , ,AngleTestTest PointAngleFortyFiveDegreeTest PointAngleMinusNinetyDegreeTest PointAngleNinetyDegreeTest PointAngleZeroDegreeTest PointMainTest PointRadiusTest PointTranslationTest ,
+2,Sun Jul 10 07:03:07 EDT 2016,11,0,PointPrintTest,PointPrintTest , , ,AngleTestTest PointAngleFortyFiveDegreeTest PointAngleMinusNinetyDegreeTest PointAngleNinetyDegreeTest PointAngleZeroDegreeTest PointMainTest PointRadiusTest PointTranslationTest ,
