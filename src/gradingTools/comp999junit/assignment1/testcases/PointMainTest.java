@@ -33,7 +33,7 @@ public  class PointMainTest extends AbstractPointTest {
 		
 		String[] anOutputLines = anOutput.split("\n");
 		if (anOutputLines.length != 2) {
-			Assert.assertTrue("Expecting exactly two output lines" + NotesAndScore.PERECTAGE_CHARACTER + fractionComplete, false);
+			Assert.assertTrue("Expecting exactly two output lines" + NotesAndScore.PERCENTAGE_MARKER + fractionComplete, false);
 		}
 		fractionComplete += 0.1;
 			Double aComputedRadius = Double.parseDouble (anOutputLines[0]);

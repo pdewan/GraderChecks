@@ -18,7 +18,7 @@ public abstract class MultiAbstractPointMainTest extends MultiAbstractPointTest 
 		
 		String[] anOutputLines = anOutput.split("\n");
 		if (anOutputLines.length != 2) {
-			Assert.assertTrue("Expecting exactly two output lines" + NotesAndScore.PERECTAGE_CHARACTER + fractionComplete, false);
+			Assert.assertTrue("Expecting exactly two output lines" + NotesAndScore.PERCENTAGE_MARKER + fractionComplete, false);
 		}
 		fractionComplete += 0.1;
 		try {
@@ -28,7 +28,7 @@ public abstract class MultiAbstractPointMainTest extends MultiAbstractPointTest 
 
 
 		} catch (Exception e) {
-			Assert.assertTrue("One or more output does not parse as a double" + NotesAndScore.PERECTAGE_CHARACTER + fractionComplete, false);
+			Assert.assertTrue("One or more output does not parse as a double" + NotesAndScore.PERCENTAGE_MARKER + fractionComplete, false);
 		}
 		
 	}
