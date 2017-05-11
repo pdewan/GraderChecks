@@ -12,7 +12,7 @@ import util.annotations.MaxValue;
 public class ADirectPointMainTest extends MultiAbstractPointMainTest {
 
 	@Override
-	protected String runMain(String[] anArgs, String... anInput) {
+	protected String runMain(String[] anArgs, String... anInput) throws Throwable {
 		return BasicProjectExecution.invokeMain(Main.class, anArgs, anInput).out;
 				
 	}

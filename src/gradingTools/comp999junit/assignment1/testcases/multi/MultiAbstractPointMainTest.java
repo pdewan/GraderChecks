@@ -6,13 +6,20 @@ import org.junit.Assert;
 
 public abstract class MultiAbstractPointMainTest extends MultiAbstractPointTest {
 	
-	protected abstract  String runMain (String[] anArgs, String... anInput) ;
+	protected abstract  String runMain (String[] anArgs, String... anInput) throws Throwable ;
 	protected  void testMain(int theX, int theY, double aCorrectRadius,
 			double aCorrectAngle) {
 		double fractionComplete = 0.0;
 //		String anInput = theX + "\n" + theY;
 //		String anOutput = runMain(new String[]{}, anInput);
-		String anOutput = runMain(new String[]{}, "" + theX, "" + theY);
+		String anOutput;
+		try {
+			anOutput = runMain(new String[]{}, "" + theX, "" + theY);
+		} catch (Throwable e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+			return;
+		}
 //		String anOutput2 = runMain(new String[]{}, "" + theX, "" + theY);
 
 		

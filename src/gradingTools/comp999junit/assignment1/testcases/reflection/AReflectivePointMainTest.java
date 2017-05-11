@@ -12,7 +12,7 @@ import util.annotations.MaxValue;
 public class AReflectivePointMainTest extends MultiAbstractPointMainTest {
 
 	@Override
-	protected String runMain(String[] anArgs, String... anInput) {
+	protected String runMain(String[] anArgs, String... anInput) throws Throwable {
 //		try {
 //		ExecutionUtil.redirectInputOutput(anInput);		
 //		Class aMainClass = IntrospectionUtil.findClass(CurrentProjectHolder.getOrCreateCurrentProject(), Main.class);
